@@ -1,0 +1,376 @@
+---
+layout: dashboard
+title: filename.java
+---
+
+<div class="dashboard__code">
+  <div class="dashboard__actionbar" data-uk-sticky>
+    <a href="index.html">
+      <img class="actionbar__logo" src="{{ site.url }}{{ '/assets/img/logo.svg' | relative_url }}" alt="CodeHermes" />
+    </a>
+    <strong>Lesson 3 <i class="uk-icon-angle-right"></i> filename.java</strong>
+    <div class="actionbar__input">
+      Share this link: 
+      <input type="text" value="{{ site.url }}{{ '/codehermes/student.html' | relative_url }}" data-share-link />
+      <!-- <div class="actionbar__icon" data-uk-tooltip title="Copy to clipboard"><i class="uk-icon-clipboard"></i></div> -->
+    </div>
+  </div>
+  
+  <ul id="code-list">
+    <li id="code-line-1">
+      <div class="code__line_number">1</div>
+      <pre class="code__line"><code class="language-java">import java.lang.Math.*;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-2">
+      <div class="code__line_number">2</div>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-3">
+      <div class="code__line_number">3</div>
+      <pre class="code__line"><code class="language-java">public class Numbers {</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-4">
+      <div class="code__line_number">4</div>
+      <pre class="code__line"><code class="language-java">    public boolean isPrimeBad(int n) {</code></pre>
+      <div class="dropdown">
+        <div class="code__icon" data-uk-tooltip="{pos:'right'}" title="1 question asked">1</div>
+      </div>
+    </li>
+    <li id="code-line-5">
+      <div class="code__line_number">5</div>
+      <pre class="code__line"><code class="language-java">        if (n < 2)</code></pre>
+      <div class="dropdown">
+        <div class="code__icon" data-uk-tooltip="{pos:'right'}" title="1 question asked">1</div>
+      </div>
+      <div class="code__inline_comment">All integers less than 2 are prime.</div>
+    </li>
+    <li id="code-line-6">
+      <div class="code__line_number">6</div>
+      <pre class="code__line"><code class="language-java">            return false;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-7">
+      <div class="code__line_number">7</div>
+      <pre class="code__line"><code class="language-java">        for(int i = 2; i < n; i ++) {</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-8">
+      <div class="code__line_number">8</div>
+      <pre class="code__line"><code class="language-java">            if(n%i == 0)</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+      <div class="code__inline_comment">n is divisible by i</div>
+    </li>
+    <li id="code-line-9">
+      <div class="code__line_number">9</div>
+      <pre class="code__line"><code class="language-java">                return false;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-10">
+      <div class="code__line_number">10</div>
+      <pre class="code__line"><code class="language-java">        }</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-11">
+      <div class="code__line_number">11</div>
+      <pre class="code__line"><code class="language-java">        return true;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-12">
+      <div class="code__line_number">12</div>
+      <pre class="code__line"><code class="language-java">    }</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-13">
+      <div class="code__line_number">13</div>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-14">
+      <div class="code__line_number">14</div>
+      <pre class="code__line"><code class="language-java">    public boolean isPrimeBetter(int n) {</code></pre>
+      <div class="dropdown">
+        <div class="code__icon" data-uk-tooltip="{pos:'right'}" title="1 question asked">1</div>
+      </div>
+    </li>
+    <li id="code-line-15">
+      <div class="code__line_number">15</div>
+      <pre class="code__line"><code class="language-java">        if (n < 2)</code></pre>
+      <div class="dropdown">
+        <div class="code__icon" data-uk-tooltip="{pos:'right'}" title="2 questions asked">2</div>
+      </div>
+    </li>
+    <li id="code-line-16">
+      <div class="code__line_number">16</div>
+      <pre class="code__line"><code class="language-java">            return false;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-17">
+      <div class="code__line_number">17</div>
+      <pre class="code__line"><code class="language-java">        if(n == 2)</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+      <div class="code__inline_comment">2 is prime</div>
+    </li>
+    <li id="code-line-18">
+      <div class="code__line_number">18</div>
+      <pre class="code__line"><code class="language-java">            return true;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-19">
+      <div class="code__line_number">19</div>
+      <pre class="code__line"><code class="language-java">        if (n%2 == 0)</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+      <div class="code__inline_comment">but all other even numbers aren't</div>
+    </li>
+    <li id="code-line-20">
+      <div class="code__line_number">20</div>
+      <pre class="code__line"><code class="language-java">            return false;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-21">
+      <div class="code__line_number">21</div>
+      <pre class="code__line"><code class="language-java">        for(int i = 3; i < n/2; i+=2) {</code></pre>
+      <div class="dropdown">
+        <div class="code__icon" data-uk-tooltip="{pos:'right'}" title="2 questions asked">2</div>
+      </div>
+      <div class="code__inline_comment">needn't check with even numbers</div>
+    </li>
+    <li id="code-line-22">
+      <div class="code__line_number">22</div>
+      <pre class="code__line"><code class="language-java">            if(n%i == 0)</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-23">
+      <div class="code__line_number">23</div>
+      <pre class="code__line"><code class="language-java">                return false;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-24">
+      <div class="code__line_number">24</div>
+      <pre class="code__line"><code class="language-java">        }</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-25">
+      <div class="code__line_number">25</div>
+      <pre class="code__line"><code class="language-java">        return true;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-26">
+      <div class="code__line_number">26</div>
+      <pre class="code__line"><code class="language-java">    }</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-27">
+      <div class="code__line_number">27</div>
+      <pre class="code__line"><code class="language-java">    public boolean isPrimeGood(int n) {</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-28">
+      <div class="code__line_number">28</div>
+      <pre class="code__line"><code class="language-java">        if (n < 2)</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-29">
+      <div class="code__line_number">29</div>
+      <pre class="code__line"><code class="language-java">            return false;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-30">
+      <div class="code__line_number">30</div>
+      <pre class="code__line"><code class="language-java">        if (n == 2)</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-31">
+      <div class="code__line_number">31</div>
+      <pre class="code__line"><code class="language-java">            return true;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-32">
+      <div class="code__line_number">32</div>
+      <pre class="code__line"><code class="language-java">        if (n%2 == 0)</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-33">
+      <div class="code__line_number">33</div>
+      <pre class="code__line"><code class="language-java">            return false;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-34">
+      <div class="code__line_number">34</div>
+      <pre class="code__line"><code class="language-java">        for(int i = 3; i < Math.sqrt(n); i+=2) {</code></pre>
+      <div class="dropdown">
+        <div class="code__icon" data-uk-tooltip="{pos:'right'}" title="1 question asked">1</div>
+      </div>
+      <div class="code__inline_comment">checks fewer numbers</div>
+    </li>
+    <li id="code-line-35">
+      <div class="code__line_number">35</div>
+      <pre class="code__line"><code class="language-java">            if(n%i == 0)</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-36">
+      <div class="code__line_number">36</div>
+      <pre class="code__line"><code class="language-java">                return false;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-37">
+      <div class="code__line_number">37</div>
+      <pre class="code__line"><code class="language-java">        }</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-38">
+      <div class="code__line_number">38</div>
+      <pre class="code__line"><code class="language-java">        return true;</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-39">
+      <div class="code__line_number">39</div>
+      <pre class="code__line"><code class="language-java">    }</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+    <li id="code-line-40">
+      <div class="code__line_number">40</div>
+      <pre class="code__line"><code class="language-java">}</code></pre>
+      <div class="dropdown">
+        <div class="code__icon--muted" data-uk-tooltip="{pos:'right'}" title="No questions asked">0</div>
+      </div>
+    </li>
+
+    <!-- Don't remove these -->
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <!-- End don't touch -->
+  </ul>
+</div>
+
+<div class="dashboard__comment">
+  <div class="dashboard__comment__border"></div>
+  <div class="comments">
+    <div class="comment" style="top: 70px;">
+      <div class="comment__border"></div>
+      This function tells whether an integer is prime. It demonstrates an inefficient way of checking.
+    </div>
+    <div class="comment" style="top: 455px;">
+      <div class="comment__border"></div>
+      This is a better implementation. It checks only till half n and eliminates even numbers first. 
+    </div>
+    <div class="comment" style="top: 910px;">
+      <div class="comment__border"></div>
+      This is a reasonable implementation of isPrime. It combines the previous strategy with checking  till sqrt(n).
+    </div>
+  </div>
+</div>
+
+<div id="questions-list" class="questions">
+  <div class="list__head">Questions</div>
+  <ul class="list--line">
+    <li class="question" data-line-num="15">
+      <span class="question__number">15</span>
+      Should we be using if or if else here?
+    </li>
+    <li class="question" data-line-num="5">
+      <span class="question__number">5</span>
+      Why do we not use a delimiter for this if statement?
+    </li>
+    <li class="question" data-line-num="14">
+      <span class="question__number">14</span>
+      Please explain more on what makes this is a better function.
+    </li>
+    <li class="question" data-line-num="21">
+      <span class="question__number">21</span>
+      Why does i start at 3 and not 2?
+    </li>
+    <li class="question" data-line-num="34">
+      <span class="question__number">34</span>
+      If this checks less, why isn't this more efficient than isPrimeBetter?
+    </li>
+    <li class="question" data-line-num="4">
+      <span class="question__number">4</span>
+      Can this function work with floats?
+    </li>
+    <li class="question" data-line-num="15">
+      <span class="question__number">15</span>
+      Does the order of the conditions matter?
+    </li>
+    <li class="question" data-line-num="21">
+      <span class="question__number">21</span>
+      Why are we incrementing by 2?
+    </li>
+    <li class="question" data-line-num="15">
+      <span class="question__number">15</span>
+      Could you have combined the conditions here? Like if (n < 2) or (n%2 == 0), return false?
+    </li>
+  </ul>
+</div>

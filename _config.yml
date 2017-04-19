@@ -1,0 +1,10 @@
+title: Codehermes
+baseurl: "/codehermes"
+url: "http://lillian-chen.com"
+
+# Build settings
+sass:
+  style: compressed
+markdown: kramdown
+exclude: ['node_modules', 'gulpfile.js', 'package.json']
+include: ['_scss', '*.scss', '.htaccess']

@@ -1,0 +1,40 @@
+.v-align {
+  @extend .uk-vertical-align;
+}
+
+.v-align--middle {
+  @extend .v-align;
+
+  > div {
+    @extend .uk-width-1-1;
+    @extend .uk-vertical-align-middle;
+  }
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--rigtht {
+  text-align: right;
+}
+
+.no-display {
+  display: none;
+}
+
+.float--right {
+  float: right;
+}
+
+.float__left {
+  float: left;
+}
+
+.float--none {
+  float: none;
+}

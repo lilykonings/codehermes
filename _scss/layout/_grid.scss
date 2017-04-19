@@ -1,0 +1,27 @@
+.grid {
+  @extend .uk-grid;
+
+  > * {
+    box-sizing: border-box;
+  }
+}
+
+.grid--large {
+  @extend .grid;
+  @extend .uk-grid-large;
+}
+
+.grid--small {
+  @extend .grid;
+  @extend .uk-grid-small;
+}
+
+.grid--collapse {
+  @extend .grid;
+  @extend .uk-grid-collapse;
+}
+
+.grid--divider {
+  @extend .grid;
+  @extend .uk-grid-divider;
+}

@@ -1,0 +1,48 @@
+.sidenav {
+  @extend .uk-width-1-6;
+  position: relative;
+  height: 100%;
+  height: 100vh;
+  border-right: 1px solid $grey--dark;
+  background: $grey--dark;
+  color: $grey--light;
+  overflow: hidden;
+}
+
+.sidebar__top,
+.sidebar__bottom {
+  overflow: scroll;
+}
+
+.sidebar__top {
+  @extend .container;
+  height: 75%;
+  padding-top: 25px;
+}
+
+.sidebar__bottom {
+  height: 25%;
+  border-top: 1px solid $grey--medium;
+  background: $white;
+  overflow: scroll;
+}
+
+.sidenav__search {
+  @extend .uk-form-icon;
+  width: 100%;
+  
+  input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 7px 10px;
+    background: darken($grey--dark, 5%);
+    color: $grey--light;
+    -webkit-transition: background 800ms;
+    transition: background 800ms;
+
+    &:focus {
+      background: darken($grey--dark, 7%);
+    }
+  }
+}

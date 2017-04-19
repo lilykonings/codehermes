@@ -1,0 +1,27 @@
+.comments {
+  @extend .container;
+  height: 60%;
+}
+
+.comment {
+  position: absolute;
+  padding: 0 10px;
+  font-family: $sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.comment__border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 35px;
+  background: $blue;
+}
+
+.comment__line_number {
+  @extend %italic;
+  color: $grey--medium;
+  font-size: 0.8rem;
+}

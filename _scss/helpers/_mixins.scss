@@ -1,0 +1,28 @@
+@mixin media-query($point, $max-or-min) {
+  @if $max-or-min == max {
+    @media screen and (max-width: $point) {
+      @content;
+    }
+  } 
+  @else if $max-or-min == min {
+    @media screen and (min-width: $point) {
+      @content;
+    }
+  }
+  @else {
+    // Faulty input
+  }
+}
+
+@mixin ellipsis($lines, $fs, $lh) {
+  display: block;
+  display: -webkit-box;
+  max-height: $fs*$lh*$lines;
+  margin: 0 auto;
+  font-size: $fs + 'px';
+  line-height: $lh + 'px';
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

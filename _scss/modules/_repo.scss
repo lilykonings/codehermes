@@ -1,0 +1,24 @@
+.repo__anchor {
+  display: block;
+  padding-left: 20px;
+  background-color: transparent;
+  color: $black;
+}
+
+.repo__icon {
+  float: left;
+  margin-left: -20px;
+  margin-top: 4px;
+  color: $grey--medium;
+}
+
+.repo__name {
+  @extend %bold;
+}
+
+.repo__desc {
+  @include ellipsis(1, 0.8, 1);
+  font-size: 0.85rem;
+  line-height: 1rem;
+  color: $grey--medium;
+}

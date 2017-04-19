@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="grid--collapse uk-height-1-1">
+      {% include sidenav.html %}
+
+      <div class="dashboard">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include scripts.html %}
+  </body>
+
+</html>

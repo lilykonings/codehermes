@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+$sans-serif: 'Helvetica', 'Arial', sans-serif;
+$serif: 'Times New Roman', serif;
+$droid-sans: 'Droid Sans Mono', courier;
+
+// FONT FAMILIES
+.sans-serif {
+  font-family: $sans-serif;
+}
+
+.serif {
+  font-family: $serif;
+}
+
+.droid-sans {
+  font-family: $droid-sans;
+  font-size: 0.9rem;
+}
+
+// FONT STYLES
+
+%bold {
+  font-style: normal;
+  font-weight: 700;
+}
+
+%bolditalic {
+  font-style: italic;
+  font-weight: 700;
+}
+
+%regular {
+  font-style: normal;
+  font-weight: normal;
+}
+
+%italic {
+  font-style: italic;
+  font-weight: normal;
+}
+
+%monospace {
+  @extend .droid-sans;
+  font-style: normal;
+  font-weight: normal;
+}
+
+//MODULAR SCALE
+
+//Modular Scale 5:6 - Minor Third
+//16px @ 1:1.2
+//18px @ 1:1.2
+//http://modularscale.com/scale/?px1=16&px2=18&ra1=1.2&ra2=0
+
+%display1 {
+  font-size: 1.62rem;
+  line-height: 2.074rem;
+}
+
+%display2 {
+  font-size: 1.44rem;
+  line-height: 2.074rem;
+
+}
+
+%display3 {
+  font-size: 1rem;
+  line-height: 1.35rem;
+  
+  @include media-query($breakpoint-small, min) {
+    font-size: 1.125rem;
+  }
+  
+  @include media-query($breakpoint-xlarge, min) {
+    font-size: 1.2rem;
+    line-height: 1.44rem;
+  }
+}
+
+%textface {
+  font-size: 0.9rem;
+  line-height: 1.458rem;
+}
+
+%small {
+  font-size: 0.8rem;
+  line-height: 1.382rem;
+}
+
+%bigtosmall {
+  font-size: 1rem;
+  line-height: 1.62rem;
+  
+  @include media-query($breakpoint-small, min) {
+    font-size: 0.833rem;
+  }
+}

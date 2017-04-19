@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+::-webkit-scrollbar { 
+  display: none;
+}
+
+html {
+  @extend %textface;
+  overflow-y: scroll;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  height: 100vh;
+  background-color: $white;
+  font-family: $sans-serif;
+  @extend %regular;
+  color: $black;
+  overflow: hidden;
+}
+
+::selection {
+  background: $select-yellow;
+  color: $grey--dark;
+}
+
+::-moz-selection {
+  background: $select-yellow;
+  color: $grey--dark;
+}
+
+em,
+i {
+  @extend %italic;
+}
+
+strong,
+b {
+  @extend %bold;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+code,
+:not(pre)>code,
+:not(pre)>kbd,
+:not(pre)>samp {
+  @extend .droid-sans;
+  color: $black;
+}

@@ -1,0 +1,17 @@
+.container {
+  @extend .uk-width-9-10;
+  @extend .uk-container-center;
+  position: relative;
+}
+
+.container--login {
+  @extend .container;
+  @extend .text--center;
+  width: 350px;
+  max-width: 95%;
+}
+
+// Components
+.container--box {
+  border: 1px solid $grey--light;
+}

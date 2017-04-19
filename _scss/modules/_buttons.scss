@@ -1,0 +1,45 @@
+.btn {
+  @extend .uk-button;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.btn--github {
+  @extend .btn;
+  border-radius: 3px;
+  padding: 10px 20px;
+  background: $grey--dark;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background: $black;
+    color: $white;
+  }
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:focus {
+    background: $grey--light;
+    color: $grey--dark;
+  }
+
+  i {
+    margin-right: 7px;
+  }
+}
+
+.btn--submit {
+  @extend .btn;
+  width: 100%;
+  background: darken($green, 7%);
+  font-weight: 700;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background: darken($green, 10%);
+  }
+}

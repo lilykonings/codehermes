@@ -1,0 +1,190 @@
+.list {
+  @extend .uk-list;
+  margin: 0;
+}
+
+.list--line {
+  @extend .list;
+  
+  li {
+    border-bottom: 1px solid $grey--light;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:first-child {
+      border-bottom: 1px solid $grey--light;
+    }
+  }
+}
+
+.list--striped {
+  @extend .list;
+  @extend .uk-list-striped;
+}
+
+// Components
+.list__item {
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.list__head {
+  @extend .list__item;
+  background: $grey--light;
+  font-size: 0.9rem;
+  color: $black;
+}
+
+.list__icon {
+  @extend .list__item;
+}
+
+.list__caret {
+  position: relative;
+  padding-left: 15px;
+
+  i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  &.open {
+    ul {
+      display: block;
+    }
+
+    i:before {
+      content: "\f0d7";
+    }
+  }
+
+  a.active {
+    font-weight: 700;
+    color: $white !important;
+  }
+}
+
+// Bad code, don't look
+#repo-list ul {
+  height: 200px;
+  overflow: scroll;
+}
+
+#directory-list {
+  a {
+    color: $grey--medium;
+
+    &:hover,
+    &:focus {
+      color: $yellow;
+    }
+  }
+}
+
+#code-list {
+  @extend .list--striped;
+  // @extend .droid-sans;
+
+  li {
+    height: 35px;
+    padding: 0 10px;
+
+    &.highlight {
+      background: $select-yellow;
+    }
+  }
+
+  pre {
+    @extend .droid-sans;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: $black;
+  }
+}
+
+.code__line_number {
+  display: inline-block;
+  float: left;
+  width: 40px;
+  padding-right: 10px;
+  text-align: right;
+  font-family: $sans-serif;
+  line-height: 35px;
+  color: $grey--medium;
+}
+
+.code__line {
+  code {
+    line-height: 35px;
+  }
+}
+
+.code__icon {
+  float: right;
+  height: 20px;
+  width: 20px;
+  margin-top: 7.5px;
+  border-radius: 3px;
+  background: $green;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 20px;
+  color: $white;
+
+  &:hover {
+    background: darken($green, 5%);
+    cursor: pointer;
+  }
+}
+
+.code__icon--muted {
+  @extend .code__icon;
+  background: lighten($green, 25%);
+
+  &:hover {
+    background: lighten($green, 25%);
+  }
+}
+
+.code__inline_comment {
+  @extend .code__icon;
+  width: auto;
+  max-width: 200px;
+  margin-right: 5px;
+  border: 1px solid $grey--medium;
+  padding: 0 5px;
+  background: $white;
+  text-align: left;
+  color: $grey--medium;
+  overflow: scroll;
+  white-space: nowrap;
+
+  &:hover {
+    background: $white;
+    cursor: auto;
+  }
+}
+
+#questions-list {
+  background: $white;
+
+  ul {
+    height: 250px;
+    overflow: scroll;
+  }
+
+  li {
+    padding: 5px 10px;
+  }
+}
